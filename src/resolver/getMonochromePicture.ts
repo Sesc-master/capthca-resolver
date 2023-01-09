@@ -16,11 +16,10 @@ async function loadImg (img: HTMLImageElement) {
     });
 }
 
-export default async function getMonochromePicture(): Promise<MonochromePicture | undefined> {
-    const img = document.querySelector("img");
+export default async function getMonochromePicture(img: HTMLImageElement): Promise<MonochromePicture | undefined> {
     const ctx = document.createElement("canvas").getContext("2d");
 
-    if (!ctx || !img) return;
+    if (!ctx) return;
 
     await loadImg(img);
 

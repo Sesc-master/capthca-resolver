@@ -1,7 +1,7 @@
 {
   "name": "SESC-master Captcha Resolver",
   "description": "This extension is made for automatically solve captcha on lycreg.urfu.ru",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": [],
   "action": {},

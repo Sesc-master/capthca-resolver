@@ -2,8 +2,8 @@ import getDigit from "./getDigit";
 import getMonochromePicture from "./getMonochromePicture";
 import NumMask from "./types/NumMask";
 
-export default async function resolve(numMasks: Array<NumMask>): Promise<string | undefined> {
-    const monochromePicture = await getMonochromePicture();
+export default async function resolve(numMasks: Array<NumMask>, img: HTMLImageElement): Promise<string | undefined> {
+    const monochromePicture = await getMonochromePicture(img);
 
     if (!monochromePicture) return;
 
